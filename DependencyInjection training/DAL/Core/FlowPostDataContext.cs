@@ -7,6 +7,9 @@ namespace NinjectStudy.DAL
 {
 	public class FlowPostDataContext : DbContext, IFlowPostDataContext
 	{
+		//public FlowPostDataContext() 
+		//	:base("name=FlowPost")
+		//{ }
 		public DbSet<User> Users { get; set; }
 		public DbSet<Group> Groups { get; set; }
 	}

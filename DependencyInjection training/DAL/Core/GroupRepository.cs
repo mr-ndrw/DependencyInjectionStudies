@@ -6,8 +6,9 @@ using NinjectStudy.DAL.Interfaces;
 namespace NinjectStudy.DAL
 {
 	public class GroupRepository : RepositoryBase<Group>, IGroupRepository
-	{	
-		public GroupRepository(IFlowPostDataContext dataContext) : base(dataContext)
+	{
+		public GroupRepository(IFlowPostDataContext dataContext)
+			: base(dataContext)
 		{
 		}
 
