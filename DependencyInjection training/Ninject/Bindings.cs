@@ -15,8 +15,13 @@ namespace NinjectStudy.Ninject
 		public override void Load()
 		{
 			Bind<IFlowPostDataContext>().To<FlowPostDataContext>();
+
 			Bind<IUserRepository>().To<UserRepository>();
 			Bind<IUserService>().To<UserService>();
+
+			Bind<IGroupRepository>().To<GroupRepository>();
+			Bind<IGroupService>().To<GroupService>();
+
 			Bind<IFlowPostServices>().To<FlowPostServices>();
 		}
 	}
