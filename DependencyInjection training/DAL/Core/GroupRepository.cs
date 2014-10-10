@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity.Core.Common.CommandTrees;
 using System.Linq;
 using NinjectStudy.BLL.Entities;
 using NinjectStudy.DAL.Interfaces;
@@ -14,12 +15,12 @@ namespace NinjectStudy.DAL
 
 		protected override IQueryable<Group> EntitySet
 		{
-			get { throw new NotImplementedException(); }
+			get { return DataContext.Groups; }
 		}
 
 		protected override Group GetSingle(Group entity)
 		{
-			throw new NotImplementedException();
+			return EntitySet.FirstOrDefault(group => group.Id == entity.Id);
 		}
 	}
 }

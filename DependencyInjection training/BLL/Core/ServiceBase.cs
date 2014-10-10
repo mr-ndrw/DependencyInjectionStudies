@@ -21,7 +21,7 @@ namespace NinjectStudy.BLL.Core
 		/// </param>
 		public void Insert(T entity, bool commit)
 		{
-			throw new NotImplementedException();
+			repository.Insert(entity, commit);
 		}
 
 		/// <summary>
@@ -32,7 +32,7 @@ namespace NinjectStudy.BLL.Core
 		/// </param>
 		public void Delete(T entity, bool commit)
 		{
-			throw new NotImplementedException();
+			repository.Delete(entity, commit);
 		}
 
 		/// <summary>
@@ -43,7 +43,7 @@ namespace NinjectStudy.BLL.Core
 		/// </param>
 		public void Update(T entity, bool commit)
 		{
-			throw new NotImplementedException();
+			repository.Update(entity, commit);
 		}
 
 		/// <summary>
@@ -57,7 +57,7 @@ namespace NinjectStudy.BLL.Core
 		/// </returns>
 		public T GetSingle(Expression<Func<T, bool>> predicate)
 		{
-			throw new NotImplementedException();
+			return repository.GetSingle(predicate);
 		}
 
 		/// <summary>
@@ -68,7 +68,7 @@ namespace NinjectStudy.BLL.Core
 		/// </returns>
 		public IQueryable<T> GetAll()
 		{
-			throw new NotImplementedException();
+			return repository.GetAll();
 		}
 
 		/// <summary>
@@ -82,7 +82,7 @@ namespace NinjectStudy.BLL.Core
 		/// </returns>
 		public IQueryable<T> GetAll(Expression<Func<T, bool>> predicate)
 		{
-			throw new NotImplementedException();
+			return repository.GetAll(predicate);
 		}
 
 		/// <summary>
@@ -93,7 +93,7 @@ namespace NinjectStudy.BLL.Core
 		/// </returns>
 		public long Count()
 		{
-			throw new NotImplementedException();
+			return repository.Count();
 		}
 
 		/// <summary>
@@ -107,7 +107,7 @@ namespace NinjectStudy.BLL.Core
 		/// </returns>
 		public long Count(Expression<Func<T, bool>> predicate)
 		{
-			throw new NotImplementedException();
+			return repository.Count(predicate);
 		}
 
 		/// <summary>
@@ -121,7 +121,7 @@ namespace NinjectStudy.BLL.Core
 		/// </returns>
 		public IQueryable<T> GetQueryable(Expression<Func<T, bool>> predicate)
 		{
-			throw new NotImplementedException();
+			return repository.GetQueryable(predicate);
 		}
 	}
 }
