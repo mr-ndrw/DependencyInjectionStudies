@@ -3,5 +3,6 @@
 	public interface IFlowPostServices
 	{
 		IUserService UserService { get; set; }
+		IGroupService GroupService { get; set; }
 	}
 }
