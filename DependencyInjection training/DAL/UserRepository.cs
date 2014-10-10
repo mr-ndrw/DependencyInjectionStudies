@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using NinjectStudy.BLL;
+using NinjectStudy.BLL.Entities;
+using NinjectStudy.DAL.Interfaces;
 
 namespace NinjectStudy.DAL
 {

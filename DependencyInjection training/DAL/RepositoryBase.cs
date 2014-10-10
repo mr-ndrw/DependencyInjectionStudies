@@ -3,6 +3,8 @@ using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
+using NinjectStudy.DAL;
+using NinjectStudy.DAL.Interfaces;
 
 namespace NinjectStudy.DAL
 {
@@ -26,7 +28,7 @@ namespace NinjectStudy.DAL
 
 		#endregion
 
-		#region Properties
+ 		#region Properties
 
 		public IFlowPostDataContext DataContext { get; private set; }
 

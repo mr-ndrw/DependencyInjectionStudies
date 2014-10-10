@@ -1,6 +1,9 @@
 ﻿using Ninject.Modules;
 using NinjectStudy.BLL;
+using NinjectStudy.BLL.Core;
+using NinjectStudy.BLL.Interfaces;
 using NinjectStudy.DAL;
+using NinjectStudy.DAL.Interfaces;
 
 namespace NinjectStudy.Ninject
 {
